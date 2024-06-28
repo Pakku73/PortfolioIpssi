@@ -78,7 +78,7 @@
 
 /* SCROLL TEXT */
 
-.scroll-text{
+.scroll-text {
   z-index: 15;
   position: absolute;
   top: calc(100vh - 70px);
@@ -99,14 +99,11 @@
   }
 }
 
-
-
-
 /* IMAGES HOVER */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 figure.snip0016 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -119,19 +116,19 @@ figure.snip0016 {
   text-align: left;
 }
 
-.purple{
-    background: rgba(177, 10, 177, 0.509);
+.purple {
+  background: rgba(177, 10, 177, 0.509);
 }
 
-.red{
-    background: rgba(196, 0, 0, 0.509);
+.red {
+  background: rgba(196, 0, 0, 0.509);
 }
 
-.grey{
-    background: rgb(70, 70, 70, 0.509);
+.grey {
+  background: rgb(70, 70, 70, 0.509);
 }
 
-.yellow{
+.yellow {
   background: rgba(208, 199, 27, 0.509);
 }
 
@@ -161,7 +158,7 @@ figure.snip0016 figcaption::before {
   bottom: 30px;
   left: 100%;
   border-left: 2px solid rgba(255, 255, 255, 0.8);
-  content: '';
+  content: "";
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.5s;
@@ -175,7 +172,8 @@ figure.snip0016 p {
   margin: 0 0 5px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s,
+    -o-transform 0.35s, transform 0.35s;
 }
 figure.snip0016 h2 {
   word-spacing: -0.15em;
@@ -189,12 +187,12 @@ figure.snip0016 h2 {
   margin-top: -30px;
 }
 
-figure.snip0016 p{
+figure.snip0016 p {
   width: 120%;
   left: 0;
 }
 
-figure.snip0016 a{
+figure.snip0016 a {
   margin-left: 0;
   padding-left: 0;
 }
@@ -243,7 +241,7 @@ figure.snip0016:hover figcaption::before {
   transition-delay: 0s;
 }
 
-.subLink{
+.subLink {
   padding-left: 10px;
   color: white;
   text-decoration: None;
@@ -259,10 +257,10 @@ figure.snip0016:hover figcaption::before {
   transition: ease-in-out 0.2s;
 }
 
-.subLink:hover{
+.subLink:hover {
   text-decoration: underline;
-  
-  .arrow-white{
+
+  .arrow-white {
     transform: translateX(5px) rotate(-45deg);
   }
 }
@@ -297,7 +295,7 @@ figure.snip0016:hover figcaption::before {
   margin-right: 4px;
 }
 
-.CV{
+.CV {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -307,25 +305,25 @@ figure.snip0016:hover figcaption::before {
   transition: ease-in-out 0.5s;
 }
 
-.CV:hover{
+.CV:hover {
   color: orange;
   transform: translateX(4px);
 
-  .arrow{
+  .arrow {
     padding: 5px;
   }
 
-  .arrow2{
+  .arrow2 {
     padding: 5px;
   }
 
-  .right{
+  .right {
     border-color: orange;
     transform: translateX(6px);
     transform: translateY(6px);
   }
 
-  .left{
+  .left {
     border-color: orange;
     transform: translateX(-6px);
     transform: translateY(-6px);
@@ -346,7 +344,6 @@ figure.snip0016:hover figcaption::before {
   transform: rotate(0deg);
 } */
 
-
 /* FADE ANIMATIONS */
 
 .fade-in-up {
@@ -358,4 +355,45 @@ figure.snip0016:hover figcaption::before {
 .fade-in-up.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.download-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.tableau {
+  color: grey;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+}
+
+.tableau:hover {
+  color: orange;
+}
+
+.sources {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.source-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: azure;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
